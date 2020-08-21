@@ -1,0 +1,18 @@
+server:
+  tomcat:
+    uri-encoding: utf-8
+  servlet:
+    context-path: /
+
+jwt:
+  header: Authorization
+  secret: mySecret
+  expiration: 7200000
+  route.authentication.path: /auth
+  route.authentication.refresh: /refresh
+
+spring:
+  profiles:
+    active: dev
+  tomcat:
+    uri-encoding: utf-8
